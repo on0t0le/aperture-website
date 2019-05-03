@@ -6,9 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  btn_name="open";
+  btn_name = "open";
+  opened: boolean = false;
 
-  getFunction(){
-    console.log('Hello Testsubject');
+  changeSidenav() {
+    this.opened = !this.opened;
   }
 }

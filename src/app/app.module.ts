@@ -4,11 +4,23 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MatToolbarModule,MatIconModule,MatButtonModule,MatSidenavModule} from '@angular/material';
+import {MatToolbarModule,
+        MatIconModule,
+        MatButtonModule,
+        MatSidenavModule,
+        MatListModule,
+        MatCardModule,
+        MatTabsModule
+      } from '@angular/material';
+import { AppRoutingModule } from './app-routing.module';
+import { MainPageComponent } from './main-page/main-page.component';
+import { LemonComponent } from './lemon/lemon.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainPageComponent,
+    LemonComponent
   ],
   imports: [
     BrowserModule,
@@ -16,7 +28,11 @@ import {MatToolbarModule,MatIconModule,MatButtonModule,MatSidenavModule} from '@
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    AppRoutingModule,
+    MatListModule,
+    MatCardModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
