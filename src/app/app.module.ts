@@ -15,12 +15,14 @@ import {MatToolbarModule,
 import { AppRoutingModule } from './app-routing.module';
 import { MainPageComponent } from './main-page/main-page.component';
 import { LemonComponent } from './lemon/lemon.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
-    LemonComponent
+    LemonComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,7 @@
     </mat-toolbar>
     <mat-nav-list>
       <a mat-list-item routerLink="/main">Main</a>
-      <a mat-list-item routerLink="/lemon">Lemon</a>
+      <a mat-list-item routerLink="/cavelemons" skipLocationChange>Lemon</a>
     </mat-nav-list>
   </mat-sidenav>
 
@@ -18,13 +18,16 @@
         <a mat-button routerLink="/main">
           <span>Aperture</span>
         </a>
-        <span class="example-spacer"></span>
-        <span>{{opened}}</span>
-        <button mat-icon-button (click)="changeSidenav()">
+        <span class="example-spacer"></span>        
+        <button mat-icon-button (click)="initAperture()">
           <mat-icon class="example-icon" aria-hidden="false">camera</mat-icon>
         </button>
-        <mat-icon class="example-icon" aria-hidden="false">favorite</mat-icon>
-        <mat-icon class="example-icon" aria-hidden="false">center_focus_weak</mat-icon>
+        <button mat-icon-button (click)="initLike()">
+          <mat-icon class="example-icon" aria-hidden="false">favorite</mat-icon>
+        </button>
+        <button mat-icon-button (click)="initCube()">
+          <mat-icon class="example-icon" aria-hidden="false">center_focus_weak</mat-icon>
+        </button>
       </mat-toolbar-row>
     </mat-toolbar>
 
