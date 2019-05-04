@@ -6,16 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lemon.component.css']
 })
 export class LemonComponent implements OnInit {
-
-  cards: number[] = [];
-  private position = "above";
+ 
+  position = "above";
 
   constructor() { }
 
-  ngOnInit() {
-    for (let c = 0; c < 10; c++) {
-      this.cards.push(c);
-    }
+  ngOnInit() {    
   }
 
   setTab(item: any){    
