@@ -10,6 +10,43 @@
     <p class="mat-headline">Aperture Science computer-aided Enrichment Center</p>
   </div>
 </mat-card>
+<mat-card>
+  <mat-card-content>   
+    <div class="mat-subheading-2">
+      <p>
+        The Aperture Science computer-aided Enrichment Center is Aperture Science's main facility where its products
+        branded
+        "Aperture Laboratories" are developed and tested.
+      </p>
+      <p>
+        It was found in 1947. It is unknown if the same complex is used during the time Aperture was a shower curtain
+        manufacturer.
+      </p>
+      <p>
+        But in nowadays we produce somthing more interesting. You asking why? Because we can.
+      </p>   
+      </div>
+  </mat-card-content>
+</mat-card>
+<mat-card style="text-align:center;">
+  <mat-card-content>
+    <p class="mat-title">This is our certificates:</p>
+  </mat-card-content>
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+      <img src="../../assets/image/1.png">
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <img src="../../assets/image/2.png">
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <img src="../../assets/image/3.png">
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <img src="../../assets/image/4.png">
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>
 <mat-card class="example-card">
   <mat-card-content>
     Astronauts, war heroes, Olympians - you're here because we want the best, and
@@ -17,10 +54,10 @@
     <p>So: Who is ready to make some science?</p>
     <br>
     <div style="text-align:center;">
-    <mat-form-field>
-      <input matInput placeholder="Enter your name" #testname>
-    </mat-form-field>
-    <button mat-button (click)="readyToTest(testname.value)" class="btn-ready">Ready!</button>
-  </div>
+      <mat-form-field>
+        <input matInput placeholder="Enter your name" #testname>
+      </mat-form-field>
+      <button mat-button (click)="readyToTest(testname.value)" class="btn-ready">Ready!</button>
+    </div>
   </mat-card-content>
 </mat-card>

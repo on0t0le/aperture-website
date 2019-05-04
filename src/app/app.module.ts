@@ -13,7 +13,8 @@ import {MatToolbarModule,
         MatTabsModule,
         MatFormFieldModule,
         MatInputModule,
-        MatSnackBarModule
+        MatSnackBarModule,
+        MatGridListModule
       } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { MainPageComponent } from './main-page/main-page.component';
@@ -40,7 +41,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     MatTabsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
