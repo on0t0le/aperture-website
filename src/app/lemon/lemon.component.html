@@ -4,9 +4,8 @@
       src="http://po-zdravidnes.com/language/bg/uploads/img_original/articles__0/article__8c997a7dd3654a7a4f755ebbbb788ce2.jpg"
       style="height:400px; width:auto">
     <mat-card-content>
-      When life gives you lemons
-      <br>
-      <p>Don't make lemonade</p>
+      <cite class="mat-h3"><q>When life gives you lemons</q></cite>
+      <p class="mat-display-1">Don't make lemonade!</p>
     </mat-card-content>
   </mat-card>
   <mat-card>
@@ -18,48 +17,49 @@
     <img mat-card-image src="https://static.tvtropes.org/pmwiki/pub/images/inside_out_anger_fullbody.png"
       style="height:500px; width:auto">
     <mat-card-content>
-      <h1>Get mad!</h1>
+      <h1 class="mat-display-3">Get mad!!!</h1>
     </mat-card-content>
   </mat-card>
   <mat-card>
-    - I don't want your damn lemons!
-    <br>
-    - What am I supposed to do with these?
+    <mat-card-content class="mat-headline">
+      - I don't want your damn lemons!
+      <br>
+      - What am I supposed to do with these?
+    </mat-card-content>
   </mat-card>
   <mat-card>
     Demand to see life's manager!
   </mat-card>
   <mat-tab-group [(headerPosition)]="position" dynamicHeight (selectedIndexChange)="setTab($event)"
     mat-align-tabs="center">
-    <mat-tab label="DO">
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon>warning</mat-icon>
+        DO
+      </ng-template>
       <mat-card>
         <mat-card-content>
-          <div>
-            Make life<br>
-            rue<br><br>
-
-            the<br>
-            day<br><br>
-
-            it thought it could give<br>
-
-            Cave Johnson <br>
-
-            LEMONS!
+          <div class="mat-headline">
+            Make life rue the day it thought it could give Cave Johnson LEMONS!
           </div>
         </mat-card-content>
       </mat-card>
     </mat-tab>
     <mat-tab>
       <ng-template mat-tab-label>
-        <mat-icon>thumb_up</mat-icon>
         YOU
+        <mat-icon>directions_walk</mat-icon>
       </ng-template>
       <mat-card>
         <h3>Do you know who I am?</h3>
       </mat-card>
     </mat-tab>
-    <mat-tab label="KNOW">
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon>whatshot</mat-icon>
+        KNOW
+        <mat-icon>whatshot</mat-icon>
+      </ng-template>
       <mat-card>
         <mat-card-content>
           <h2>I'm the man who's going to burn your house down!</h2>
@@ -71,7 +71,7 @@
     </mat-tab>
   </mat-tab-group>
   <mat-card>
-    <h1>With the lemons!</h1>
+    <h1 class="mat-display-3">With the lemons!</h1>
   </mat-card>
   <mat-card>
     <mat-card-header>
@@ -82,8 +82,8 @@
     <img mat-card-image
       src="https://res.cloudinary.com/teepublic/image/private/s--O8676oPS--/t_Preview/b_rgb:ffb81c,c_limit,f_jpg,h_630,q_90,w_630/v1485560958/production/designs/461689_3.jpg"
       style="height:500px; width:auto">
-    <mat-card-footer>
-      <b>A combustible lemon that burns your house down!</b>
+    <mat-card-footer style="text-align:end;">
+      <b class="mat-headline">A combustible lemon that burns your house down!</b>
     </mat-card-footer>
   </mat-card>
 </div>

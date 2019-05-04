@@ -1,3 +1,9 @@
 .example-card {
     margin: 10px
 }
+mat-form-field {
+    margin-right: 12px;
+}
+.btn-ready{
+    background-color: #b2ff59;
+}

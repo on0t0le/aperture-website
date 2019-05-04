@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-main-page',
@@ -7,15 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  items: string[] = [];
-  constructor() { }
+  constructor(private snackBar: MatSnackBar) { }
 
-  ngOnInit() {
-    for (let i = 0; i < 100; i++) {
-      this.items.push(i.toString());
-    }
+  ngOnInit() {    
   }
 
-
-
+  readyToTest(testname: string){
+    if(testname){
+      console.log(testname);
+      this.snackBar.open(testname,"READY!",{duration: 2000});
+    }
+  }
 }

@@ -10,7 +10,10 @@ import {MatToolbarModule,
         MatSidenavModule,
         MatListModule,
         MatCardModule,
-        MatTabsModule
+        MatTabsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatSnackBarModule
       } from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { MainPageComponent } from './main-page/main-page.component';
@@ -34,7 +37,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AppRoutingModule,
     MatListModule,
     MatCardModule,
-    MatTabsModule
+    MatTabsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
